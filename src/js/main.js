@@ -15,7 +15,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(mymap);
 
 var i = 0
-while(i < parks.length) {
+while(i < parks.length ) {
     var newPark = L.marker([parks[i].y,parks[i].x]).addTo(mymap);
     newPark.bindPopup(parks[i].Name);
     i++;
